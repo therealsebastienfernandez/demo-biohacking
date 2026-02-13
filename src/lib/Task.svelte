@@ -1,5 +1,6 @@
 <script>
- let important = "Elle est <strong>importante</strong>"
+    let {name = "task vide"} = $props();
+    let important = "Elle est <strong>importante</strong>"
 </script>
-<p>Ceci est ma tâche</p>
+<p>{name}, Ceci est ma tâche</p>
 <p>{@html important}</p>
